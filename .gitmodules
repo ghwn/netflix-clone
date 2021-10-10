@@ -1,0 +1,3 @@
+[submodule "service-discovery"]
+	path = service-discovery
+	url = git@github.com:ghwn/netflix-clone-service-discovery.git
