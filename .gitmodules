@@ -4,3 +4,9 @@
 [submodule "account-service"]
 	path = account-service
 	url = git@github.com:ghwn/netflix-clone-account-service.git
+[submodule "movie-service"]
+	path = movie-service
+	url = git@github.com:ghwn/netflix-clone-movie-service
+[submodule "api-gateway-service"]
+	path = api-gateway-service
+	url = git@github.com:ghwn/netflix-clone-api-gateway-service
