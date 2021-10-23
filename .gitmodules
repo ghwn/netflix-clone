@@ -10,3 +10,6 @@
 [submodule "api-gateway-service"]
 	path = api-gateway-service
 	url = git@github.com:ghwn/netflix-clone-api-gateway-service
+[submodule "config-service"]
+	path = config-service
+	url = git@github.com:ghwn/netflix-clone-config-service
