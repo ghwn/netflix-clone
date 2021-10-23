@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/account-service
+    username: sa
+    password: '{cipher}AQAF8EvAofhfB3H2FHkkg1Uuy/XgnZuze72tD8HwA6Ql4n6KCDNe0izJcZP6ICpMIOfcIRyipuM0ytV7l/0PQErL8od8UVytpN/hu9AD6bXRoIb753XjA95mvqL6MTvCNaKohFpJh0VGOLEyOvZ6zbPxAJUg3pd+8UYqoSGzmcZx50CkquPzYIsnp7yU2I2+WRO5P33m0751AhfrZj4GFgbzrorQkn/ENftYSHOBzlDTR4FbIvWPukBPfg9n5471KyRrFrjEXnldsAfqOQpmYYPNaLDB/v/b+6CBIAqCXr+nVo06kZ8jbzBlD7/PvJXfJe/HfqHh3LYsmr+vVCb9yynlxSVx97kKusO1MAsoMsxbTi2lCBb/Sd9hdXmUqqYsb94='
+    driver-class-name: org.h2.Driver
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: '{cipher}AQB5pETTMpIMnbUlTa4b/AX+T14HXT0O2ByCN2kkG9Ntgz8qmdUnwQaZAgEVZUS+7EPM9HFenIXSDaXSDD5slkRHpVBSoOJSZuWPbbvsmgwRbzKuNui8bCiWQAm1Paosx+/fon3/MxbwOC3bGgxibGIUsimPimeGcM3U62dOmQY76epLduJgm4PMl1l+uGsOOe7mcBS3T6WKKWwxBgAyIRkEjd+V9qltXFWHWYYaC3xtSJrSngNFrkMLod7LHYS5Cd8cLCmOzy62b6eCHhp5IK+p6hjtmp4emf2az0ZZh97FJ8Kpr0Z6ywg87SbwqJZqbvT9Op7WEUTLpcsK+43aXdNSWDmHrCglLHRy2EL6e4kDL1SnhieTJqM99qzR8VKfx1I='

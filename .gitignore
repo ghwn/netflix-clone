@@ -1,7 +1,11 @@
 .idea
 
-# configuration files
-configs
+configs/*.iml
 
-keystore
+keystore/*.iml
+keystore/*.jks
+keystore/*.cer
+keystore/*.cert
+keystore/*.key
+keystore/*.pub
 
