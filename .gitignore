@@ -1,7 +1,5 @@
 .idea
 
-configs/*.iml
-
 keystore/*.iml
 keystore/*.jks
 keystore/*.cer
