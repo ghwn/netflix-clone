@@ -16,3 +16,6 @@
 [submodule "configs"]
 	path = configs
 	url = git@github.com:ghwn/netflix-clone-configs.git
+[submodule "react-service"]
+	path = react-service
+	url = git@github.com:ghwn/netflix-clone-react-service.git
