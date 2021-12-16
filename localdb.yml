@@ -1,16 +1,52 @@
 version: "3"
 
 volumes:
-  local_mysql_data: {}
+  account_service_db_volume: {}
+  api_gateway_service_db_volume: {}
+  config_service_db_volume: {}
+  movie_service_db_volume: {}
 
 services:
-  db:
+  account_service_db:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: netflix
+      MYSQL_DATABASE: account_service
     volumes:
-      - local_mysql_data:/var/lib/mysql
+      - account_service_db_volume:/var/lib/mysql
     ports:
       - "3306:3306"
+    restart: always
+
+  api_gateway_service_db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: api_gateway_service
+    volumes:
+      - api_gateway_service_db_volume:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    restart: always
+
+  config_service_db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: config_service
+    volumes:
+      - config_service_db_volume:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    restart: always
+
+  movie_service_db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: movie_service
+    volumes:
+      - movie_service_db_volume:/var/lib/mysql
+    ports:
+      - "3309:3306"
     restart: always
